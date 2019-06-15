@@ -160,6 +160,7 @@
             // 
             // Removerbutton
             // 
+            this.Removerbutton.Image = global::UsuarioAnalisis.Properties.Resources.file_del;
             this.Removerbutton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Removerbutton.Location = new System.Drawing.Point(18, 375);
             this.Removerbutton.Name = "Removerbutton";
@@ -172,6 +173,7 @@
             // 
             // BuscarButton
             // 
+            this.BuscarButton.Image = global::UsuarioAnalisis.Properties.Resources.find;
             this.BuscarButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BuscarButton.Location = new System.Drawing.Point(193, 20);
             this.BuscarButton.Name = "BuscarButton";
@@ -184,6 +186,7 @@
             // 
             // Eliminarbutton
             // 
+            this.Eliminarbutton.Image = global::UsuarioAnalisis.Properties.Resources.cancel;
             this.Eliminarbutton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.Eliminarbutton.Location = new System.Drawing.Point(275, 437);
             this.Eliminarbutton.Name = "Eliminarbutton";
@@ -196,6 +199,7 @@
             // 
             // Guardarbutton
             // 
+            this.Guardarbutton.Image = global::UsuarioAnalisis.Properties.Resources.folder_new;
             this.Guardarbutton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.Guardarbutton.Location = new System.Drawing.Point(163, 437);
             this.Guardarbutton.Name = "Guardarbutton";
@@ -208,6 +212,7 @@
             // 
             // Nuevobutton
             // 
+            this.Nuevobutton.Image = global::UsuarioAnalisis.Properties.Resources.add;
             this.Nuevobutton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.Nuevobutton.Location = new System.Drawing.Point(28, 440);
             this.Nuevobutton.Name = "Nuevobutton";

@@ -114,6 +114,9 @@
     <EmbeddedResource Include="UI\Consulta\Menu1.resx">
       <DependentUpon>Menu1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UI\Registros\rTipoAnalisis.resx">
+      <DependentUpon>rTipoAnalisis.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\Registros\rUsuario.resx" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
