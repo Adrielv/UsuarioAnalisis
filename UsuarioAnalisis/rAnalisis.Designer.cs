@@ -151,6 +151,7 @@
             // 
             // Agregarbutton
             // 
+            this.Agregarbutton.Image = global::UsuarioAnalisis.Properties.Resources.add;
             this.Agregarbutton.Location = new System.Drawing.Point(371, 190);
             this.Agregarbutton.Name = "Agregarbutton";
             this.Agregarbutton.Size = new System.Drawing.Size(32, 30);
@@ -188,7 +189,7 @@
             // 
             this.Eliminarbutton.Image = global::UsuarioAnalisis.Properties.Resources.cancel;
             this.Eliminarbutton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Eliminarbutton.Location = new System.Drawing.Point(275, 437);
+            this.Eliminarbutton.Location = new System.Drawing.Point(290, 434);
             this.Eliminarbutton.Name = "Eliminarbutton";
             this.Eliminarbutton.Size = new System.Drawing.Size(75, 58);
             this.Eliminarbutton.TabIndex = 7;
@@ -201,9 +202,9 @@
             // 
             this.Guardarbutton.Image = global::UsuarioAnalisis.Properties.Resources.folder_new;
             this.Guardarbutton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Guardarbutton.Location = new System.Drawing.Point(163, 437);
+            this.Guardarbutton.Location = new System.Drawing.Point(177, 434);
             this.Guardarbutton.Name = "Guardarbutton";
-            this.Guardarbutton.Size = new System.Drawing.Size(75, 55);
+            this.Guardarbutton.Size = new System.Drawing.Size(75, 58);
             this.Guardarbutton.TabIndex = 6;
             this.Guardarbutton.Text = "Guardar";
             this.Guardarbutton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -214,7 +215,7 @@
             // 
             this.Nuevobutton.Image = global::UsuarioAnalisis.Properties.Resources.add;
             this.Nuevobutton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Nuevobutton.Location = new System.Drawing.Point(28, 440);
+            this.Nuevobutton.Location = new System.Drawing.Point(57, 434);
             this.Nuevobutton.Name = "Nuevobutton";
             this.Nuevobutton.Size = new System.Drawing.Size(75, 58);
             this.Nuevobutton.TabIndex = 5;
@@ -246,7 +247,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "rAnalisis";
-            this.Text = "Form1";
+            this.Text = "Registro Analisis";
             ((System.ComponentModel.ISupportInitialize)(this.detalleDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.AnalisisIdNumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MyErrorProvider)).EndInit();

@@ -139,13 +139,13 @@ namespace UsuarioAnalisis
 
             if (analisis != null)
             {
-                MessageBox.Show("Producto encontrado");
+                MessageBox.Show("Usuario encontrado");
                 LlenaCampo(analisis);
 
             }
             else
             {
-                MessageBox.Show("Producto no existe");
+                MessageBox.Show("Usuario no existe");
             }
         }
 

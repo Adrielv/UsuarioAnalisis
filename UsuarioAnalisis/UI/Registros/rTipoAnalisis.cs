@@ -145,13 +145,13 @@ namespace UsuarioAnalisis.UI.Registros
 
             if (tipoanalisis != null)
             {
-                MessageBox.Show("ubicacion encontrado");
+                MessageBox.Show("Analisis encontrado");
                 LlenaCampo(tipoanalisis);
 
             }
             else
             {
-                MessageBox.Show("ubicacion no existe");
+                MessageBox.Show("Analisis no existe");
             }
         }
 
