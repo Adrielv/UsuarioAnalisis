@@ -137,6 +137,7 @@
             this.detalleDataGridView.RowTemplate.Height = 24;
             this.detalleDataGridView.Size = new System.Drawing.Size(385, 126);
             this.detalleDataGridView.TabIndex = 15;
+        
             // 
             // AnalisisIdNumericUpDown
             // 
