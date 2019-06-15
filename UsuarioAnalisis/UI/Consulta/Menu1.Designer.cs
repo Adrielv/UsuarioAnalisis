@@ -1,6 +1,6 @@
-﻿namespace UsuarioAnalisis
+﻿namespace UsuarioAnalisis.UI.Consulta
 {
-    partial class Menu
+    partial class Menu1
     {
         /// <summary>
         /// Required designer variable.
@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.registroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cargosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.consultaUsuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.consultaCargoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.registroToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.cargosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.analisisUsuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tipoAnalisisToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -42,7 +42,7 @@
             // 
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.menuToolStripMenuItem,
+            this.registroToolStripMenuItem,
             this.consultaToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -50,61 +50,59 @@
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // menuToolStripMenuItem
-            // 
-            this.menuToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.registroToolStripMenuItem,
-            this.cargosToolStripMenuItem});
-            this.menuToolStripMenuItem.Name = "menuToolStripMenuItem";
-            this.menuToolStripMenuItem.Size = new System.Drawing.Size(58, 24);
-            this.menuToolStripMenuItem.Text = "Menu";
-            // 
             // registroToolStripMenuItem
             // 
+            this.registroToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.registroToolStripMenuItem1,
+            this.cargosToolStripMenuItem,
+            this.analisisUsuarioToolStripMenuItem,
+            this.tipoAnalisisToolStripMenuItem});
             this.registroToolStripMenuItem.Name = "registroToolStripMenuItem";
-            this.registroToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.registroToolStripMenuItem.Size = new System.Drawing.Size(76, 24);
             this.registroToolStripMenuItem.Text = "Registro";
-            this.registroToolStripMenuItem.Click += new System.EventHandler(this.RegistroToolStripMenuItem_Click);
+            // 
+            // consultaToolStripMenuItem
+            // 
+            this.consultaToolStripMenuItem.Name = "consultaToolStripMenuItem";
+            this.consultaToolStripMenuItem.Size = new System.Drawing.Size(78, 24);
+            this.consultaToolStripMenuItem.Text = "Consulta";
+            // 
+            // registroToolStripMenuItem1
+            // 
+            this.registroToolStripMenuItem1.Name = "registroToolStripMenuItem1";
+            this.registroToolStripMenuItem1.Size = new System.Drawing.Size(216, 26);
+            this.registroToolStripMenuItem1.Text = "Registro";
+            this.registroToolStripMenuItem1.Click += new System.EventHandler(this.RegistroToolStripMenuItem1_Click);
             // 
             // cargosToolStripMenuItem
             // 
             this.cargosToolStripMenuItem.Name = "cargosToolStripMenuItem";
             this.cargosToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.cargosToolStripMenuItem.Text = "Cargos";
-     //       this.cargosToolStripMenuItem.Click += new System.EventHandler(this.CargosToolStripMenuItem_Click);
             // 
-            // consultaToolStripMenuItem
+            // analisisUsuarioToolStripMenuItem
             // 
-            this.consultaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.consultaUsuarioToolStripMenuItem,
-            this.consultaCargoToolStripMenuItem});
-            this.consultaToolStripMenuItem.Name = "consultaToolStripMenuItem";
-            this.consultaToolStripMenuItem.Size = new System.Drawing.Size(78, 24);
-            this.consultaToolStripMenuItem.Text = "Consulta";
+            this.analisisUsuarioToolStripMenuItem.Name = "analisisUsuarioToolStripMenuItem";
+            this.analisisUsuarioToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.analisisUsuarioToolStripMenuItem.Text = "AnalisisUsuario";
+            this.analisisUsuarioToolStripMenuItem.Click += new System.EventHandler(this.AnalisisUsuarioToolStripMenuItem_Click);
             // 
-            // consultaUsuarioToolStripMenuItem
+            // tipoAnalisisToolStripMenuItem
             // 
-            this.consultaUsuarioToolStripMenuItem.Name = "consultaUsuarioToolStripMenuItem";
-            this.consultaUsuarioToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
-            this.consultaUsuarioToolStripMenuItem.Text = "ConsultaUsuario";
-            this.consultaUsuarioToolStripMenuItem.Click += new System.EventHandler(this.ConsultaUsuarioToolStripMenuItem_Click);
+            this.tipoAnalisisToolStripMenuItem.Name = "tipoAnalisisToolStripMenuItem";
+            this.tipoAnalisisToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.tipoAnalisisToolStripMenuItem.Text = "TipoAnalisis";
+            this.tipoAnalisisToolStripMenuItem.Click += new System.EventHandler(this.TipoAnalisisToolStripMenuItem_Click);
             // 
-            // consultaCargoToolStripMenuItem
-            // 
-            this.consultaCargoToolStripMenuItem.Name = "consultaCargoToolStripMenuItem";
-            this.consultaCargoToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
-            this.consultaCargoToolStripMenuItem.Text = "ConsultaCargo";
-            this.consultaCargoToolStripMenuItem.Click += new System.EventHandler(this.ConsultaCargoToolStripMenuItem_Click);
-            // 
-            // Menu
+            // Menu1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "Menu";
-            this.Text = "Menu";
+            this.Name = "Menu1";
+            this.Text = "Menu1";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -115,11 +113,11 @@
         #endregion
 
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem menuToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem registroToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem registroToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem cargosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem analisisUsuarioToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tipoAnalisisToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem consultaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem consultaUsuarioToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem consultaCargoToolStripMenuItem;
     }
 }

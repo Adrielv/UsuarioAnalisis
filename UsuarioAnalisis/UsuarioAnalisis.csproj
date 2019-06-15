@@ -80,10 +80,18 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="UI\Consulta\ConsultaCargos.Designer.cs" />
-    <Compile Include="UI\Consulta\Menu.cs">
+    <Compile Include="UI\Consulta\Menu1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\Consulta\Menu.Designer.cs" />
+    <Compile Include="UI\Consulta\Menu1.Designer.cs">
+      <DependentUpon>Menu1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Registros\rTipoAnalisis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Registros\rTipoAnalisis.Designer.cs">
+      <DependentUpon>rTipoAnalisis.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\Registros\rUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,13 +104,16 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="rAnalisis.resx">
       <DependentUpon>rAnalisis.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Consulta\Consulta.resx" />
     <EmbeddedResource Include="UI\Consulta\ConsultaCargos.resx" />
-    <EmbeddedResource Include="UI\Consulta\Menu.resx" />
+    <EmbeddedResource Include="UI\Consulta\Menu1.resx">
+      <DependentUpon>Menu1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\Registros\rUsuario.resx" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -120,6 +131,12 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <None Include="Resources\cancel.ico" />
+    <None Include="Resources\folder_new.ico" />
+    <None Include="Resources\add1.ico" />
+    <None Include="Resources\file_del.ico" />
+    <None Include="Resources\find1.ico" />
+    <None Include="Resources\add.ico" />
     <Content Include="Resources\delete.ico" />
     <Content Include="Resources\find.ico" />
     <Content Include="Resources\preferences.ico" />

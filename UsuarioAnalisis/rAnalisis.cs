@@ -72,7 +72,7 @@ namespace UsuarioAnalisis
 
         private void LlenaCampo(Analisis analisis)
         {
-            AnalisisIdNumericUpDown.Value = analisis.UsuarioId;
+            AnalisisIdNumericUpDown.Value = analisis.AnalisisId;
             FechadateTimePicker.Value = analisis.FechaAnalisis;
             UsuariocomboBox.Text = analisis.UsuarioId.ToString();
             this.Detalle = analisis.Resultado;
@@ -147,6 +147,88 @@ namespace UsuarioAnalisis
             {
                 MessageBox.Show("Producto no existe");
             }
+        }
+
+        private void Nuevobutton_Click(object sender, EventArgs e)
+        {
+            Limpiar();
+        }
+
+        private void Guardarbutton_Click(object sender, EventArgs e)
+        {
+            Analisis analisis;
+            bool paso = false;
+
+            if (!Validar())
+                return;
+
+            analisis = LlenaClase();
+
+
+            if (AnalisisIdNumericUpDown.Value == 0)
+            {
+                paso = AnalisisBLL.Guardar(analisis);
+            }
+            else
+            {
+                if (!ExisteEnLaBaseDeDatos())
+                {
+                    MessageBox.Show("No se puede modificar una persona que no existe", "Fallo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+                paso = AnalisisBLL.Modificar(analisis);
+
+            }
+
+            if (paso)
+                MessageBox.Show("Guardado!!", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            else
+                MessageBox.Show("No fue posible guardar!!", "Fallo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            Limpiar();
+        }
+
+        private void Eliminarbutton_Click(object sender, EventArgs e)
+        {
+            MyErrorProvider.Clear();
+            int id;
+            int.TryParse(AnalisisIdNumericUpDown.Text, out id);
+            Limpiar();
+            if (AnalisisBLL.Eliminar(id))
+            {
+                MessageBox.Show("Eliminado");
+            }
+            else
+            {
+                MyErrorProvider.SetError(AnalisisIdNumericUpDown, "No se puede elimina, porque no existe");
+            }
+        }
+
+        private void Removerbutton_Click(object sender, EventArgs e)
+        {
+            if (detalleDataGridView.Rows.Count > 0 && detalleDataGridView.CurrentRow != null)
+            {
+
+                Detalle.RemoveAt(detalleDataGridView.CurrentRow.Index);
+
+
+            }
+        }
+
+        private void Agregarbutton_Click(object sender, EventArgs e)
+        {
+            if (detalleDataGridView.DataSource != null)
+                this.Detalle = (List<AnalisisDetalle>)detalleDataGridView.DataSource;
+
+            this.Detalle.Add(
+                new AnalisisDetalle(
+                    id: 0,
+                    analisisid: (int)AnalisisIdNumericUpDown.Value,
+                    tipoanalisisid: Convert.ToInt32(TipoAnalisiscomboBox.Text),
+                    resultado: ResultadotextBox.Text
+                    )
+               );
+
+            CargarGrid();
         }
     }
 }
